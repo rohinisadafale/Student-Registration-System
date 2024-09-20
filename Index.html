@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Student Registration System</h1>
+        <p>Register, edit, and manage student records efficiently.</p>
+    </header>
+    <main>
+        <form id="studentForm">
+            <div class="form-control">
+                <label for="studentName">Student Name:</label>
+                <input type="text" id="studentName" placeholder="Please enter a name (e.g. John Doe)" name="studentName" required>
+                <small>Error message</small>
+            </div>
+            <div class="form-control">
+                <label for="studentId">Student ID:</label>
+                <input type="number" id="studentId" name="studentId" placeholder="Please enter Student ID" required>
+                <small>Error message</small>
+            </div>
+            <div class="form-control">
+                <label for="emailId">Email ID:</label>
+                <input type="email" id="emailId" name="emailId" placeholder="Please enter an email " required>
+                <small>Error message</small>
+            </div>
+            <div class="form-control">
+                <label for="contactNo">Contact No.:</label>
+                <input type="tel" id="contactNo" name="contactNo" placeholder="Please enter a 10 digit contact no. " required>
+                <small>Error message</small>
+            </div>
+            <button type="submit">Register</button>
+        </form>
+        <section id="studentRecords">
+            <h2>Registered Students</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Student Name</th>
+                        <th>Student ID</th>
+                        <th>Email ID</th>
+                        <th>Contact No.</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="recordsContainer"></tbody>
+            </table>
+        </section>
+    </main>
+    
+    <script src="script.js" defer></script>
+</body>
+</html>
